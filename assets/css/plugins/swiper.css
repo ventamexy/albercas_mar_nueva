@@ -1,0 +1,24 @@
+.swiper {
+    width: 80%;
+    height: 600px;
+    margin: 100px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.swiper-slide-active {
+    background-color: transparent!important;
+}
+
+.swiper-slide-visible {
+    background-color: #ff9900c9!important;
+}
+
+.swiper-slide-active img {
+    width: 73%;
+}

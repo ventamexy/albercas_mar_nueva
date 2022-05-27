@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Albercas del mar</title>
+    <link rel="icon" type="image/png" href="../img/icono_title.png">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+    <link rel="stylesheet" href="css/colorbox.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+
+
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/">
+                    <img src="img/alb_logo.svg" alt="Logotipo de Bienes Raices">
+                </a>
+                <div class="mobile-menu">
+                    <a href="#navegacion">
+                        <img src="img/barras.svg" alt="Icono Menu">
+                    </a>
+                </div>
+
+                <!-- <div class="menu-movil">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div> -->
+
+                <nav id="navegacion" class="navegacion">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="blog.html">Galeria</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </div> <!-- contenedor -->
+    </header>
+
+
+
+    <main class="contenedor ">
+        <h1 class="fw-300 centrar-texto">Galeria</h1>
+       
+            <ul class="lista-albercas clearfix">
+
+                <li>
+                    <div class="alberca">
+                        <a class="alberca-info" href="#invitado1">
+                            <img style="max-width:100%;" src="img/galeria/alberca01.jpg" alt="Imagen alberca">
+                            <!-- <p>Alberca num1</p> -->
+                        </a>
+                    </div>
+                    <!-- END .invitado -->
+                </li>
+
+                <div style="display:none;">
+
+                    <div class="alberca-info" id="invitado1">
+                        <!-- <h2>Alberca num1 </h2> -->
+                        <img style="max-width:100%;" src="img/galeria/alberca01.jpg" alt="">
+                        <!-- <p>Praesent rutrum efficitur pharetra. Vivamus scelerisque pretium velit, id tempor turpis -->
+                            <!-- pulvinar et. Ut bibendum finibus massa non molestie.</p> -->
+                    </div>
+
+                </div>
+
+
+                <li>
+                    <div class="alberca">
+                        <a class="alberca-info" href="#invitado2">
+                            <img style="max-width:100%;" src="img/galeria/alberca02.jpg" alt="Imagen alberca">
+                            <!-- <!-- <p>Alberca num2</p> --> 
+                        </a>
+                    </div>
+                    <!-- END .invitado -->
+                </li>
+
+                <div style="display:none;">
+
+                    <div class="alberca-info" id="invitado2">
+                        <!-- <!-- <h2>alberca num 2</h2> --> 
+                        <img style="max-width:100%;" src="img/galeria/alberca02.jpg" alt="">
+                        <!-- <p>Curabitur urna metus, placerat gravida lacus ut, lacinia congue orci. Maecenas luctus mi at -->
+                            <!-- ex blandit vehicula. Morbi porttitor tempus euismod.</p> -->
+                    </div>
+
+                </div>
+
+
+                <li>
+                    <div class="alberca">
+                        <a class="alberca-info" href="#invitado3">
+                            <img style="max-width:100%;" src="img/galeria/alberca03.jpg" alt="Imagen alberca">
+                            <!-- <!-- <p>alberca num3</p> --> 
+                        </a>
+                    </div>
+                    <!-- END .invitado -->
+                </li>
+
+                <div style="display:none;">
+
+                    <div class="alberca-info" id="invitado3">
+                        <!-- <!-- <h2>alberca num3</h2> --> 
+                        <img style="max-width:100%;" src="img/galeria/alberca03.jpg" alt="">
+                        <!-- <p>placerat gravida lacus ut, lacinia congue orci. Maecenas luctus mi at ex blandit vehicula. -->
+                            <!-- Morbi porttitor tempus euismod.</p> -->
+                    </div>
+
+                </div>
+
+
+                <li>
+                    <div class="alberca">
+                        <a class="alberca-info" href="#invitado4">
+                            <img style="max-width:100%;" src="img/galeria/alberca04.jpg" alt="Imagen alberca">
+                            <!-- <!-- <p>alberca num4</p> --> 
+                        </a>
+                    </div>
+                    <!-- END .invitado -->
+                </li>
+
+                <div style="display:none;">
+
+                    <div class="alberca-info" id="invitado4">
+                        <!-- <!-- <h2>alberca num4</h2> -->
+                        <img style="max-width:100%;" src="img/galeria/alberca04.jpg" alt="">
+                        <!-- <p>Praesent rutrum efficitur pharetra. Vivamus scelerisque pretium velit, id tempor turpis -->
+                            <!-- pulvinar et. Ut bibendum finibus</p> -->
+                    </div>
+
+                </div>
+
+
+                <li>
+                    <div class="alberca">
+                        <a class="alberca-info" href="#invitado5">
+                            <img style="max-width:100%;" src="img/galeria/alberca05.jpg" alt="Imagen alberca">
+                            <!-- <!-- <p>alberca num5</p> --> 
+                        </a>
+                    </div>
+                    <!-- END .invitado -->
+                </li>
+
+                <div style="display:none;">
+
+                    <div class="alberca-info" id="invitado5">
+                        <!-- <!-- <h2>alberca num5</h2> --> 
+                        <img style="max-width:100%;" src="img/galeria/alberca05.jpg" alt="">
+                        <!-- <p>placerat gravida lacus ut, lacinia congue orci. Maecenas luctus mi at ex blandit vehicula. -->
+                            <!-- Morbi porttitor tempus euismod.</p> -->
+                    </div>
+
+                </div>
+
+
+                <li>
+                    <div class="alberca">
+                        <a class="alberca-info" href="#invitado6">
+                            <img style="max-width:100%;" src="img/galeria/alberca06.jpg" alt="Imagen alberca">
+                            <!-- <!-- <p>alberca num6</p> --> 
+                        </a>
+                    </div>
+                    <!-- END .invitado -->
+                </li>
+
+                <div style="display:none;">
+
+                    <div class="alberca-info" id="invitado6">
+                        <!-- <!-- <h2>alberca num6</h2> --> 
+                        <img style="max-width:100%;" src="img/galeria/alberca06.jpg" alt="">
+                        <!-- <p>Praesent rutrum efficitur pharetra. Vivamus scelerisque pretium velit, id tempor turpis -->
+                            <!-- pulvinar et. Ut bibendum finibus massa non molestie. Curabitur urna metus, placerat gravida
+                            lacus ut, lacinia congue orci. Maecenas luctus mi at -->
+                            <!-- ex blandit vehicula. Morbi porttitor tempus euismod.</p> -->
+                    </div>
+
+                </div>
+
+
+            </ul>
+            <!-- END lista-invitados -->
+    
+
+
+    </main>
+
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+                <a href="blog.html">Galeria</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+     <p class="copyright">Todos los Derechos Reservados 2021 &copy; </p> 
+        </div>
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="js/plugins.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+    </footer>
+</body>
+
+</html>
