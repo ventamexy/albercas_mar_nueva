@@ -502,6 +502,11 @@ nav.navbar a {
     width: 300px;
 }
 
+.seccion-contacto * {
+    color: #464646!important;
+    font-weight: bold;
+}
+
 /* 
     *
     * --- Media querys
