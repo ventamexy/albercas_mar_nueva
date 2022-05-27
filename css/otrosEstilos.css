@@ -102,11 +102,6 @@
     display: block!important;
 }
 
-/* .navegacion-principal li a, .navegacion-principal a {
-    color: #fff!important;
-    font-weight: bold;
-} */
-
 .navbar-toggler {
     background-color: #fff!important;
 }
@@ -455,15 +450,6 @@ nav.navbar a {
     margin-bottom: 0px;
 }
 
-.carousel-caption {
-    /* top: 0;
-    bottom: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center; */
-}
-
 .carousel-caption * {
     color: #fff!important;
 }
@@ -505,6 +491,10 @@ nav.navbar a {
 .seccion-contacto * {
     color: #464646!important;
     font-weight: bold;
+}
+
+footer h4 span {
+    color: var(--color-secundario)!important;
 }
 
 /* 
