@@ -1,129 +1,131 @@
-// Toggle menu-bar
+window.onload = function() {
 
-document.addEventListener('DOMContentLoaded', function () {
-    evenetListener();
+    // --- Definir propieades elementos {li}
+    defineListName();
+
+    // Selección de opción del menú en base a la sección actual.
+    let pagina = window.location.pathname;
+    let arrayAhref = document.querySelectorAll("#navegacion-principal a");
+
+    if ( arrayAhref.length > 0 ) {
+         
+        if ( pagina != "/" ) {
+    
+            arrayAhref.removeClass("item-activo");
+            for (var i = 0; i < arrayAhref.length; i++) {
+                let elemento = arrayAhref[i];
+                if ( elemento.pathname == pagina ) {
+                    elemento.classList.add("item-activo");
+                    // --- Se agrega la clase para no mostrar el borde inferior del elemento.
+                    contenedorPadre = elemento.parentNode;
+                    contenedorPadre.classList.add("background-color-none");
+                    return;
+                }
+            }
+    
+        } else {
+            arrayAhref[0].classList.add("item-activo");
+        }
+
+    }
+ 
+    // Funtion for define list name.
+    function defineListName() {
+
+        let arrayListaItems = document.querySelectorAll(".listas-items");
+        for (let index = 0; index < arrayListaItems.length; index++) {
+
+            let listName = arrayListaItems[index];
+            listName.dataset.listName = "list-"+(index+1);
+
+            let arrayItems = listName.children;
+            for (let indexItem = 0; indexItem < arrayItems.length; indexItem++) {
+                let item = arrayItems[indexItem]; 
+                item.dataset.indexElemento = indexItem;
+            }
+
+        }
+
+    }
+    
+}
+
+/**
+ * 
+ * Movimiento scrollY
+ * 
+ */
+$(document).on("scroll", function() { 
+
+    /**
+     * --- Unidades en pixeles.
+     */
+    let offsetHeight = $(document)[0].scrollingElement.offsetHeight; // Altura total del elemento
+    let scrollTop = $(document).scrollTop(); // Desplazamiento del scroll vertical.
+    let clientHeight = $(document)[0].scrollingElement.clientHeight;
+
+    // console.log(offsetHeight, clientHeight, (offsetHeight-clientHeight), " = ", scrollTop);
+
+    if ( (offsetHeight-clientHeight) == scrollTop ) {
+
+        $(".irAbajo i").addClass("transform-r-180");
+        $(".irAbajo").removeClass("irAbajo").addClass("irArriba");
+
+    } else {
+
+        $(".irAbajo i").removeClass("transform-r-180");
+        $(".irArriba").removeClass("irArriba").addClass("irAbajo");
+
+    }
+
+    /**
+     * 
+     * Fijar menú
+     * 
+     */
+
+    if ( document.querySelector(".menu-fijado") != null ) {
+
+        if ( scrollTop >= 200 ) {
+            $(".navbar")[0].classList.add("menu-fijado");
+        } else {
+            $(".navbar")[0].classList.remove("menu-fijado");
+        }
+
+    }
+    
 });
 
-function evenetListener() {
-    const mobileMenu = document.querySelector('.mobile-menu');
+// --- Se establece el anio actual en el campo correspondiente.
+$(".anio-actual").text(new Date().getFullYear());
 
-    mobileMenu.addEventListener('click', navegacionResponsive);
-}
+$(document).on("click", ".irAbajo", function(){
+    window.scroll({
+        top: document.body.offsetHeight,
+        behavior: 'smooth'
+    });
+});
 
-function navegacionResponsive() {
-    const navegacion = document.querySelector('.navegacion');
-
-
-    navegacion.classList.toggle('mostrar')
-    // if(navegacion.classList.contains('mostrar')){
-    //     navegacion.classList.remove('mostrar')
-    // }else{
-    //     navegacion.classList.add('mostrar')
-    // }
-}
-
-
-// Mapa
-if ( document.getElementById('mapa') ) {
-
-    var map = L.map('mapa').setView([17.960890, -102.195890], 17);
-
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-
-    L.marker([17.960890, -102.195890]).addTo(map).bindPopup('Albercas del mar').openPopup();
-    // .bindTooltip('GDLWebCamp 2018, Boletos ya disponibles')
-    // .openTooltip();
-}
-// (function () {
-//     $(function () {
-//         // Colorbox
-
-//         $('body.invitados .navegacion-principal a:contains("Invitados")').addClass('activo');
-
-//         $('.alberca-info').colorbox({ inline: true, width: '50%' });
-//         $('.boton_newsletter').colorbox({ inline: true, width: '50%' });
-//     })
-// })();
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-var firebaseConfig = {
-    apiKey: "AIzaSyCfwWEYfalbck6zdiwdfwIsPQYZ_hJdXd8",
-    authDomain: "fb-api-5835a.firebaseapp.com",
-    databaseURL: "https://fb-api-5835a-default-rtdb.firebaseio.com",
-    projectId: "fb-api-5835a",
-    storageBucket: "fb-api-5835a.appspot.com",
-    messagingSenderId: "225448914734",
-    appId: "1:225448914734:web:9bf9354378ab882add14bf",
-    measurementId: "G-8JZJJDZM18"
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
-
-const db = firebase.firestore()
-
-db.collection('anuncio-albercas-del-mar')
-    .where("visible", "==", true)
-    .get()
-    .then(snapshot => {
-        let data = [];
-        snapshot.forEach(doc => {
-            data.push(
-                Object.assign(
-                    {
-                        id: doc.id
-                    },
-                    doc.data()
-                )
-            );
-        });
-        console.log(data)
+$(document).on("click", ".irArriba", function(){
+    window.scroll({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
 
 
-        let output = ` <div class="contenedor-anuncios">`;
+// Selección de clase activa al {li} seleccionado y eliminación de clase activa a los demás {li}.
+$(document).on("click", ".listas-items li", function() {
 
-        data.forEach(function (anun) {
-            output += `
-                <div class="anuncio">
-                <img src="${anun.url}" alt="">
-                <div class="contenido-anuncio clearfix">
-                <h3>${anun.name}</h3>
-                <p>${anun.descripcion}</p>
-                </div>
-                </div>
-                `;
-        });
-        document.getElementById('elem').innerHTML = output
-        // console.log(element);
-    })
-    .catch(err => console.log(err));
+    // --- Eliminación de clase a los otros elementos {li}.
+    let array_li = $(this)[0].parentElement.children;
+    for (let index = 0; index < array_li.length; index++) {
+        array_li[index].classList.remove("item-activo");
+    }
 
-
-
-// const url = 'https://fb-api-5835a-default-rtdb.firebaseio.com/anuncio.json';
-
-// fetch(url)
-//     .then((response) => response.json())
-//     .then((data) => {
-
-//         let output = ` <div class="contenedor-anuncios">`;
-
-//         data.forEach(function (anun) {
-//             output += `
-//             <div class="anuncio">
-//             <img src="${anun.url}" alt="">
-//             <div class="contenido-anuncio">
-//             <h3>${anun.name} </h3>
-//             <p>${anun.descripcion}</p>
-//             </div>
-//             </div>
-//             `;
-//         });
-//         document.getElementById('elem').innerHTML = output;
-//         // console.log(element);
-
-
-//         console.log(Object.keys(data));
-//     })
-//     // .catch(err => console.log(err))
+    // --- Asignación de clase 'item-activo' al {li} seleccionado.
+    let li = $(this)[0].parentElement.children;
+    let indexElemento = $(this)[0].dataset.indexElemento;
+    li[indexElemento].classList.add("item-activo");
+    
+});

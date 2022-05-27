@@ -1,0 +1,288 @@
+.hr-p {
+    padding: 5px;
+    background: var(--color-principal);
+}
+
+.color-t-principal {
+    color: var(--color-principal)!important;
+}
+
+.color-f-principal {
+    background-color: var(--color-principal)!important;
+}
+
+a {
+    text-decoration: none!important;
+    color: var(--color-principal)!important;
+    font-weight: 500;
+}
+
+li {
+    list-style: none!important;
+}
+
+a:hover {
+    color: var(--color-principal)!important;
+    border-bottom: 1px solid var(--color-quinto)!important;
+}
+
+.navbar-nav>li.active, .item-activo {
+	border-bottom: 2px solid var(--color-principal);
+}
+
+.titulo-principal {
+    width: max-content;
+    color: var(--color-principal)!important;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    color: #000!important;
+    margin: 0px auto;
+}
+
+.subtitulo {
+    color: #666666!important;
+    text-align: left;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.l-s-3px {
+    letter-spacing: 3px;
+}
+
+.rotate-100deg {
+    transform: rotate(100deg);
+}
+
+.b-b-red {
+    border-bottom: 3px solid #fb0000;
+}
+
+.b-c-white {
+    border-color: #fff!important;
+}
+
+.b-c-white {
+    border: 3px solid #fff;
+}
+
+.text-left {
+    text-align: left!important;
+}
+
+.text-right {
+    text-align: right!important;
+}
+
+/* Font weight */
+.fw-800 {
+    font-weight: 800!important;
+}
+
+.links li a {
+    color: #fff!important;
+}
+
+h2::after {
+    height: 0px!important;
+}
+
+.carousel-inner {
+    background: rgb(122, 122, 122);
+    min-height: 1000px;
+}
+
+/* Menú */
+.navbar {
+    z-index: 100;
+}
+
+.navbar-nav {
+    display: flex!important;
+    flex-direction: unset!important;
+}
+
+.navbar-nav li a {
+    color:#fff!important;
+}
+
+.menu-fijado {
+    position: fixed!important;
+    top: 0!important;
+}
+
+.texto-blanco {
+    color: #fff!important;
+}
+
+.transform-r-180 {
+    transform: rotate(180deg);
+}
+
+.p-r {
+    position: relative!important;
+}
+
+.navbar-collapse {
+    flex-grow: initial;
+}
+
+.btnRegresar, .btnRegresar:hover:active:focus {
+    width: fit-content!important;
+    background-color: var(--color-secundario)!important;
+    border-color: var(--color-secundario)!important;
+    box-shadow: unset!important;
+    color: #fff!important;
+}
+
+.btnRegresar:hover:active:focus {
+    opacity: 0.5;
+}
+
+.b-left {
+    border-left: 5px solid var(--color-principal);
+    padding-left: 10px;
+}
+
+.overflow-x-h {
+    overflow-x: hidden!important;
+}
+
+/* Margenes */
+.mt-6 {
+    margin-top: 4rem;
+}
+
+.mt-7 {
+    margin-top: 5rem;
+}
+
+.mt-8 {
+    margin-top: 6rem;
+}
+
+.mt-9 {
+    margin-top: 7rem;
+}
+
+.mt-10 {
+    margin-top: 8rem;
+}
+
+/* Margenes rigth */
+.mr-10px {
+    margin-right: 10px;
+}
+
+/* Margenes left */
+
+.ml-5px {
+    margin-left: 5px;
+}
+
+.ml-10px {
+    margin-left: 10px;
+}
+
+/* Bottom */
+
+.mb-6 {
+    margin-bottom: 4rem;
+}
+
+.mb-7 {
+    margin-bottom: 5rem;
+}
+
+.mb-8 {
+    margin-bottom: 6rem;
+}
+
+.mb-9 {
+    margin-bottom: 7rem;
+}
+
+.z-index-3 {
+    z-index: 3!important;
+}
+
+.mb-10 {
+    margin-bottom: 8rem;
+}
+
+/* Text */
+.text-justify {
+    text-align: justify;
+}
+
+.box-shadow-principal {
+    box-shadow: 0px 8px 18px 1px var(--rgb-color-principal)!important;
+}
+
+/* Font size */
+
+.font-size-15px {
+    font-size: 15px!important;
+}
+
+.w-fit-content {
+    width: fit-content;
+}
+
+/* Marcación de items, click js */
+
+.listas-items li {
+    font-style: italic;
+    cursor: pointer;   
+}
+
+.listas-items .item-inactivo {
+    background-color: unset;
+    color: #212529;
+}
+
+.listas-items .item-activo {
+    background-color: var(--color-secundario)!important;
+    border-color: var(--color-secundario)!important;
+    color: #fff!important;
+}
+
+/* Padding */
+.pl-0 {
+    padding-left: 0!important;
+}
+
+.p-5px {
+    padding: 5px!important;
+}
+
+.bineta {
+    width: 15px!important;
+    height: 15px!important;
+    background: var(--color-tercero);
+    display: block;
+    margin-right: 5px;
+}
+
+.barra-separadora {
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    background: var(--color-tercero);
+}
+
+.fondo-color-secundario {
+    background-color: var(--color-secundario)!important;
+    border-color: var(--color-secundario)!important;
+}
+
+.fondo-color-secundario:hover,  .fondo-color-secundario:focus {
+    background-color: var(--color-principal)!important;
+    border-color: var(--color-principal)!important;
+    box-shadow: none!important;
+}
