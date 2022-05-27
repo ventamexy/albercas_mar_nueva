@@ -21,13 +21,15 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/estilosPersonalizados.css">
     <link rel="stylesheet" href="css/otrosEstilos.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VQQ8DSKZG"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -57,43 +59,43 @@
             </div>
             <h1>Diseño y construcción de albercas</h1>
         </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 position-absolute box-shadow-principal">
+            <div class="container-fluid">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo/logo_albercas_del_mar.png" alt="ALBERCAS DEL MAR LOGO">
+                    </a>
+                </div>
+                <h1 
+                class="ml-5px texto-logo text-uppercase w-auto fw-800 b-b-3px-c-secundario">
+                    Diseño y construcción de albercas
+                </h1>
+                <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarNavAltMarkup">
+                    <div id="navegacion-principal" class="navbar-nav text-uppercase">
+                        <a class="nav-link p-3 active" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link p-3" href="nosotros.html">¿Quiénes somos?</a>
+                        <a class="nav-link p-3" href="servicios.html">Servicios</a>
+                        <a class="nav-link p-3" href="galeria.html">Galería</a>
+                        <a class="nav-link p-3" href="contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <!-- Slider -->
         <div 
         id="carouselServicios" 
         class="carousel slide" 
         >
-            <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 position-absolute box-shadow-principal">
-                <div class="container-fluid">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="img/logo/logo_albercas_del_mar.png" alt="ALBERCAS DEL MAR LOGO">
-                        </a>
-                    </div>
-                    <h1 
-                    class="ml-5px texto-logo text-uppercase w-auto fw-800 b-b-3px-c-secundario">
-                        Diseño y construcción de albercas
-                    </h1>
-                    <button 
-                    class="navbar-toggler" 
-                    type="button" 
-                    data-bs-toggle="collapse" 
-                    data-bs-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" 
-                    aria-expanded="false" 
-                    aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarNavAltMarkup">
-                        <div id="navegacion-principal" class="navbar-nav text-uppercase">
-                            <a class="nav-link p-3 active" aria-current="page" href="index.html">Inicio</a>
-                            <a class="nav-link p-3" href="nosotros.html">¿Quiénes somos?</a>
-                            <a class="nav-link p-3" href="servicios.html">Servicios</a>
-                            <a class="nav-link p-3" href="galeria.html">Galería</a>
-                            <a class="nav-link p-3" href="contacto.html">Contacto</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
             <div class="carousel-indicators">
                 <button 
                 class="active btnSliderCambioImagen"
@@ -107,29 +109,28 @@
                 <div class="carousel-item active">
                     <img src="img/alberca_dos.jpg" 
                     class="d-block w-100">
-                    <div class="carousel-caption">
+                    <div class="carousel-caption d-flex">
                         <div class="p-r">
                             <h1 class="text-white titulo-principal">ALBERCAS</h1>
                             <h1 class="text-white mb-5 titulo-principal">DEL MAR</h1>
-                            <h3 class="text-uppercase text-center titulo-principal b-b-3px-red w-auto text-white mb-5">DISEÑO Y CONSTRUCCIÓN DE ALBERCAS</h3>
+                            <h3 
+                            class="text-uppercase text-center titulo-principal b-b-3px-c-principal w-auto text-white mb-5">
+                                DISEÑO Y CONSTRUCCIÓN DE ALBERCAS
+                            </h3>
                         </div>
-                        <div class="container mt-5 d-none">
+                        <div class="container mt-5">
                             <div class="row text-center mb-5 titulo-principal servicios-titulo text-white servicio-construccion">
                                 <p class="text-uppercase">
                                     <span class="bineta"></span>
-                                    Diseño, Construcción y Mantenimiento de Vías Terrestres, Marítimas y Ferroviarias
+                                    Diseño, Reparación, Mantenimiento y limpieza de albercas
                                 </p>
                                 <p class="text-uppercase">
                                     <span class="bineta"></span>
-                                    Pavimentación, Asfalto y Revestimiento
+                                    Instalación de paneles, calentadores solares para agua tibia y cisternas
                                 </p>
                                 <p class="text-uppercase">
                                     <span class="bineta"></span>
-                                    Obras de Infraestructura Industrial, Urbana y Residencial 
-                                </p>
-                                <p class="text-uppercase">
-                                    <span class="bineta"></span>
-                                    Construcción de Protecciones Costeras
+                                    Instalación de equipo, colocación de veneciano, cuarto de máquinas, bombas y pozos de agua
                                 </p>
                             </div>
                         </div>
@@ -160,57 +161,97 @@
             </button>
         </div>
     </header>
-    <section class="contenedor seccion">
-        <h2 class="fw-300 centrar-texto">Diseño de Albercas a tu Medida</h2>
+    <section class="nuestro-servicio container"> 
+        <article class="col-6 m-auto mb-5">
+            <div class="contenedor-informacion text-center">
+                <img 
+                class="icono-informacion-seccion mt-4"
+                src="img/iconos/information-button.png" 
+                alt="Icono servicios">
+                <h1 class="text-center b-b-3px-c-secundario fst-italic m-0">
+                    Nuestro servicio:
+                </h1>
+            </div>
+            <p>
+                Diseño, reparación, mantenimiento y limpieza de albercas, desde lo residencial hasta lo comercial, incluido instalación
+                de equipo, colocación de veneciano, cuarto de máquinas, bombas, pozos de agua, instalación de techos/maya sombra,
+                instalación de paneles y calentadores solares para agua tibia, y cisternas.
+            </p>
+        </article>
+    </section>
+    <h2 class="fw-300 text-center mb-0 titulo-descriptivo mb-4">Diseño de Albercas a tu Medida</h2>
+    <section class="contenedor seccion mt-0">
         <div class="grid" style="background-color:aliceblue">
             <div class="columnas-6">
                 <img src="img/blog1.jpg" alt="Imagen Nosotros">
             </div>
             <div class="columnas-6">
-                <h3>¿Buscas una piscina?</h3>
-                <p style="text-align: justify;">Te ayudamos a que tu sueño se haga realidad. En albercas del mar te
+                <h3 class="subtitulos">
+                    <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                    ¿Buscas una piscina?
+                </h3>
+                <p style="text-align: justify;">
+                    Te ayudamos a que tu sueño se haga realidad. En albercas del mar te
                     asesoramos para que encuentres la alberca que siempre deseaste. Nuestros asesores especializados,
                     te ofrecerán los mejores y mas modernos equipos a nivel mundial, contamos con mas de 30 años de
-                    experiencia.</p>
+                    experiencia.
+                </p>
             </div>
         </div>
     </section>
     <section class="contenedor seccion" style="background-color: azure;">
         <div class="grid">
             <div class="columnas-6">
-                <h3>Los mejores equipos para albercas en una piscina de ensueño</h3>
-                <p style="text-align: justify;">Imagina que llegas a casa después de un día largo y lleno de
-                    actividades, ¿a poco no te gustaría tener tu propio oasis y darte un momento de relajación?</p>
-                <p style="text-align: justify;">Si tu respuesta fue “sí”, ¡hazlo posible con la familia de Albercas del
-                    mar!</p>
-                <p style="text-align: justify;">Podemos ayudarte a construirlo con los mejores acabados, accesorios y
-                    equipos para albercas.</p>
+                <h3 class="subtitulos">
+                    <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                    Los mejores equipos para albercas en una piscina de ensueño
+                </h3>
+                <p style="text-align: justify;">
+                    Imagina que llegas a casa después de un día largo y lleno de
+                    actividades, ¿a poco no te gustaría tener tu propio oasis y darte un momento de relajación?
+                </p>
+                <p style="text-align: justify;">
+                    Si tu respuesta fue “sí”, ¡hazlo posible con la familia de Albercas del
+                    mar!
+                </p>
+                <p style="text-align: justify;">
+                    Podemos ayudarte a construirlo con los mejores acabados, accesorios y
+                    equipos para albercas.
+                </p>
             </div>
             <div class="columnas-6">
                 <img src="img/blog2.jpg" alt="Imagen Nosotros">
             </div>
         </div>
     </section>
-    <section class="contenedor seccion">
-        <h2 class="fw-300 centrar-texto">Más Sobre Nosotros</h2>
+    <h2 class="fw-300 text-center titulo-descriptivo mb-0">
+        Más Sobre Nosotros
+    </h2>
+    <section class="contenedor seccion my-0 mb-5">
         <div class="iconos-nosotros">
             <div class="icono">
                 <img src="img/icono1.svg" alt="Icono Equipos">
-                <h3>Equipos</h3>
-                <p>Una alberca que funciona sin problemas es una alberca que trabaja con los mejores equipos y que son
-                    los adecuados para sus necesidades .</p>
+                <h3 class="subtitulos">Equipos</h3>
+                <p>
+                    Una alberca que funciona sin problemas es una alberca que trabaja con los mejores equipos y que son
+                    los adecuados para sus necesidades.
+                </p>
             </div>
             <div class="icono">
                 <img src="img/icono2.svg" alt="Icono Construcción">
-                <h3>Construcción</h3>
-                <p>Tener en cuenta factores como los materiales, la superficie, las dimensiones, los equipos y los
-                    accesorios es parte escencial para un proyecto exitoso.</p>
+                <h3 class="subtitulos">Construcción</h3>
+                <p>
+                    Tener en cuenta factores como los materiales, la superficie, las dimensiones, los equipos y los
+                    accesorios es parte escencial para un proyecto exitoso.
+                </p>
             </div>
             <div class="icono">
                 <img src="img/icono3.svg" alt="Icono Vanguardia">
-                <h3>Vanguardia</h3>
-                <p>Soluciones tecnológicas y productos de última generación que responden a la demanda de tranquilidad,
-                    comodidad, ahorro y mejor funcionamiento.</p>
+                <h3 class="subtitulos">Vanguardia</h3>
+                <p>
+                    Soluciones tecnológicas y productos de última generación que responden a la demanda de tranquilidad,
+                    comodidad, ahorro y mejor funcionamiento.
+                </p>
             </div>
         </div>
     </section>
@@ -221,12 +262,12 @@
             <a href="contacto.html" class="boton boton-amarillo">Contactános</a>
         </div>
     </section>
+    <h1 class="fw-300 text-center titulo-descriptivo mb-0">
+        <b>Contáctanos</b>
+    </h1>
     <section class="container-fluid">
-        <h1 class=" text-center my-3">
-            <b>Contáctanos</b>
-        </h1>
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 p-0">
                 <iframe 
                 class="w-100"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.471885459347!2d-102.196537185107!3d17.956769690859733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84315de95005187b%3A0xfc3a76c03dfdcb0e!2sNicolas%20Bravo%20341%20Centro!5e0!3m2!1ses!2smx!4v1652822012953!5m2!1ses!2smx" 
@@ -252,24 +293,38 @@
     </section>
     <section class="container">
         <div class="row">
-            <div class="col-12 col-lg-6 mx-auto text-center">
-                <p>Nicolás Bravo 341, Centro, Cd. L. Cárdenas, Mich., MX.</p>
-                <p>Teléfonos +52 (753) 537 1349, +52 (753) 181 1195 y +52 (753) 168 3407</p>
-                <p>
-                    Correo: 
-                    <a href="mailto:info@albercasdelmar.com">info@albercasdelmar.com</a><br>
-                    <a href="mailto:construccionhl@yahoo.com">construccionhl@yahoo.com</a>
-                </p>
-                <nav class="redes-sociales">
-                    <a target="_blank" href="https://www.facebook.com/AlbercasLC/"><i class="fab fa-facebook"
-                            aria-hidden="true"></i></a>
-                    <a target="_blank"
-                        href="https://api.whatsapp.com/send?phone=7531683407&amp;text=Hola!&nbsp;me&nbsp;pueden&nbsp;apoyar?"><i
-                            class="fab fa-whatsapp" aria-hidden="true"></i></a>
-                    <a target="_blank" href="https://www.instagram.com/friopolarhl/"><i class="fab fa-instagram"
-                    aria-hidden="true"></i></a>
-                </nav>
-            </div>
+            <section class="contenedor seccion">
+                <h2 class="fw-300 centrar-texto">Contáctanos</h2>
+                <p class="fw-bold color-t-principal">Dirección:</p>
+                <p>Nicolás Bravo 341, Centro, Cd. Lázaro Cárdenas, Mich., MX 60950</p>
+                <p class="fw-bold color-t-principal">Teléfonos:</p>
+                <ul class="text-center p-0">
+                    <li>
+                        <a href="tel:+52 (753) 537 1349">
+                            &nbsp;<i class="fa fa-phone"></i>&nbsp;&nbsp;+52 (753) 537 1349
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+52 (753) 181 1195">
+                            &nbsp;<i class="fa fa-phone"></i>&nbsp;&nbsp;+52 (753) 181 1195
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/7531683407" target="_blank">
+                            &nbsp;<i class="fa fa-whatsapp"></i>&nbsp;+52 (753) 168 3407
+                        </a>
+                    </li>
+                </ul>
+                <p class="fw-bold color-t-principal">Correos:</p>
+                <ul class="text-center p-0">
+                    <li>
+                        <a href="mailto:info@albercasdelmar.com">info@albercasdelmar.com</a><br>
+                    </li>
+                    <li>
+                        <a href="mailto:construccionhl@yahoo.com">construccionhl@yahoo.com</a>
+                    </li>
+                </ul>
+            </section>
         </div>
     </section>
     <footer class="site-footer seccion">

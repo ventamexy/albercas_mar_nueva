@@ -186,14 +186,11 @@ div.mapa {
 
 .site-header {
     background-color: #333333;
-    padding: 1rem 0 3rem 0;
 }
 
 .site-header.inicio {
     background-position: center center;
     background-size: cover;
-    height: 100vh;
-    min-height: 60rem;
 }
 
 .contenido-header {
