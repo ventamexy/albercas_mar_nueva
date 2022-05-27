@@ -98,9 +98,10 @@
     display: block!important;
 }
 
-.navegacion-principal li a {
+/* .navegacion-principal li a, .navegacion-principal a {
     color: #fff!important;
-}
+    font-weight: bold;
+} */
 
 .navbar-toggler {
     background-color: #fff!important;
@@ -116,6 +117,7 @@ nav.navbar {
 nav.navbar a {
     color: #fff!important;
     font-size: 16px;
+    font-weight: bold;
 }
 
 .logo {
@@ -354,7 +356,14 @@ nav.navbar a {
 .btnSliderCambioImagen.active {
     width: 30px!important;
     height: 30px!important;
-    background-color: #fd9900!important;
+    border-radius: 50%;
+    background-color: var(--color-principal)!important;
+}
+
+.btnSliderCambioImagenX.active::after {
+    content: "*";
+    color: #fff;
+    font-size: 25px;
 }
 
 /* Cards */
@@ -466,6 +475,14 @@ nav.navbar a {
     font-weight: bold;
 }
 
+.carousel-indicators {
+    margin-bottom: 150px;
+}
+
+
+.contenedor.seccion {
+    margin-top: 450px;
+}
 
 /* 
     *

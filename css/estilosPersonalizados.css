@@ -91,7 +91,7 @@ h2::after {
 }
 
 .carousel-inner {
-    background: rgb(122, 122, 122);
+    background-color: var(--color-principal);
     min-height: 1000px;
 }
 
