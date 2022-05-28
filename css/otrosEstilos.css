@@ -454,6 +454,12 @@ nav.navbar a {
     color: #fff!important;
 }
 
+.subInformacion {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
 .subInformacion button {
     font-size: 16px;
     padding: 20px;
@@ -531,6 +537,12 @@ footer h4 span {
 
     .swiper-slide-active img {
         width: 100%!important;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        width: 1px;
+        height: 1px;
+        padding: 14px!important;
     }
 
 }
