@@ -275,7 +275,7 @@ h2::after {
 }
 
 .bineta {
-    width: 15px!important;
+    width: 15px;
     height: 15px!important;
     background: var(--color-tercero);
     display: block;
@@ -327,4 +327,9 @@ h2::after {
     right: 0;
     left: 0;
     background-color: rgb(0, 0, 0, 0.5);
+}
+
+.fondo-seccion {
+    background-color: rgb(0,204,205,0.1);
+    padding: 20px;
 }
