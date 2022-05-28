@@ -460,11 +460,8 @@ nav.navbar a {
     justify-content: center;
 }
 
-.subInformacion button {
-    font-size: 16px;
-    padding: 20px;
-    font-style: italic;
-    font-weight: bold;
+.subInformacion a {
+    width: auto!important;
 }
 
 .icono-informacion-seccion {
