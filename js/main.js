@@ -11,7 +11,7 @@ window.onload = function() {
          
         if ( pagina != "/" ) {
     
-            arrayAhref.removeClass("item-activo");
+            $("#navegacion-principal a").removeClass("item-activo");
             for (var i = 0; i < arrayAhref.length; i++) {
                 let elemento = arrayAhref[i];
                 if ( elemento.pathname == pagina ) {
