@@ -461,10 +461,6 @@ nav.navbar a {
     font-weight: bold;
 }
 
-.carousel-indicators {
-    margin-bottom: 150px;
-}
-
 .icono-informacion-seccion {
     width: 50px;
     height: 50px;
@@ -495,6 +491,14 @@ nav.navbar a {
 
 footer h4 span {
     color: var(--color-cuarto)!important;
+}
+
+.copyright {
+    background-color: #505050;
+    color: #ffffff;
+    padding: 10px 0;
+    margin: 20px 0 0 0;
+    text-align: center;
 }
 
 /* 
