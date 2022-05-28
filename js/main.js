@@ -5,13 +5,13 @@ window.onload = function() {
 
     // Selección de opción del menú en base a la sección actual.
     let pagina = window.location.pathname;
-    let arrayAhref = document.querySelectorAll("#navegacion-principal a");
+    let arrayAhref = $("#navegacion-principal a");
 
     if ( arrayAhref.length > 0 ) {
          
         if ( pagina != "/" ) {
     
-            $("#navegacion-principal a").removeClass("item-activo");
+            arrayAhref.removeClass("item-activo");
             for (var i = 0; i < arrayAhref.length; i++) {
                 let elemento = arrayAhref[i];
                 if ( elemento.pathname == pagina ) {

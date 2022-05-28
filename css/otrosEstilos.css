@@ -504,6 +504,19 @@ footer h4 span {
     text-align: center;
 }
 
+.imagen-fondo {
+    background-image: url(../img/alberca_tres.jpg);
+}
+
+.imagen-fondo-b {
+    background-image: url(../img/destacada3.jpg);
+}
+
+
+.contacto-frm nav {
+    font-size: 10px;
+}
+
 /* 
     *
     * --- Media querys

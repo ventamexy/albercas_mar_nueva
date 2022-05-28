@@ -1,117 +1,673 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
+    <!-- Open Graph data -->
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="ALBERCAS DEL MAR"/>
+    <meta property="og:description" content="OFRECEMOS TRABAJOS DE ALTA CALIDAD EN CONSTRUCION DE ALBERCAS"/>
+    <meta property="og:url" content="https://www.albercasdelmar.com"/>
+    <meta property="og:site_name" content="ALBERCAS DEL MAR LÁZARO CÁRDENAS MICHOACÁN"/>
+    <meta property="article:tag"
+    content="ALBERCAS EN LÁZARO CÁRDENAS MICHOACÁN, Construcción de albercas en LÁZARO CÁRDENAS MICHOACÁN, albercas olimpicas en LÁZARO CÁRDENAS MICHOACÁN, Diseño de albercas, albercas a la medida"/>
+    <meta property="article:section" content="Albercas del mar LÁZARO CÁRDENAS MICHOACÁN"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Albercas del mar</title>
-    <link rel="icon" type="image/png" href="../img/icono_title.png">
+    <title>Nosotros - Albercas del mar</title>
+    <link rel="icon" type="image/png" href="img/logo/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/estilosPersonalizados.css">
+    <link rel="stylesheet" href="css/otrosEstilos.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VQQ8DSKZG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-9VQQ8DSKZG');
+    </script>
 </head>
-
 <body>
-    <header class="site-header">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <a href="/">
-                    <img src="img/alb_logo.svg" alt="Logotipo de Bienes Raices">
-                </a>
-                <div class="mobile-menu">
-                    <a href="#navegacion">
-                        <img src="img/barras.svg" alt="Icono Menu">
+    <header class="site-header inicio">
+        <div class="row mx-0">
+            <div class="col-12 col-md-6 p-0">
+                <div class="logo mx-auto">
+                    <a href="index.html">
+                        <img src="img/logo/logo_albercas_del_mar.png" alt="ALBERCAS DEL MAR LOGO">
                     </a>
                 </div>
-
-                <nav id="navegacion" class="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="anuncios.html">Anuncios</a>
-                    <a href="blog.html">Galeria</a>
-                    <a href="contacto.html">Contacto</a>
+                <h4 class="ml-5px texto-logo text-uppercase w-auto fw-800 b-b-3px-c-secundario">
+                    Diseño y construcción de albercas
+                </h4>
+            </div>
+            <div class="col-12 col-md-6 p-0">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 box-shadow-principal h-100">
+                    <div class="container-fluid">
+                        <button 
+                        class="navbar-toggler" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end mx-auto" id="navbarNavAltMarkup">
+                            <div id="navegacion-principal" class="navbar-nav text-uppercase">
+                                <a class="nav-link p-3 active" aria-current="page" href="index.html">Inicio</a>
+                                <a class="nav-link p-3" href="nosotros.html">¿Quiénes somos?</a>
+                                <a class="nav-link p-3 d-none" href="servicios.html">Servicios</a>
+                                <a class="nav-link p-3 d-none" href="galeria.html">Galería</a>
+                                <a class="nav-link p-3" href="contacto.html">Contacto</a>
+                            </div>
+                        </div>
+                    </div>
                 </nav>
             </div>
-        </div> <!-- contenedor -->
+        </div>
     </header>
-
-    <h1 class="fw-300 centrar-texto">Contacto</h1>
-
-    <img src="img/destacada3.jpg" alt="Imagen Principal">
-
-    <main class="contenedor seccion contenido-centrado">
+    <section class="informacion-principal-nosotros">
+        <article class="imagen-fondo imagen-fondo-b row mx-0 p-r">
+            <div class="sombra-seccion"></div>
+            <div class="text-white col-6 mx-auto my-auto titulo-seccion z-index-10 fondo-seccion">
+                <span class="bineta mx-auto w-auto"></span>
+                Para visitas, levantamiento de obra y/o cotizaciones de servicios, póngase en contacto con nosotros:
+            </div>
+        </article>
+    </section>
+    <h1 class="fw-300 text-center mb-0 titulo-descriptivo mb-4 contacto-frm">
+        Contacto
         <nav class="redes-sociales">
-            <a target="_blank" href="https://www.facebook.com/AlbercasLC/"><i class="fab fa-facebook"
-                    aria-hidden="true"></i></a>
-            <a target="_blank"
-                href="https://api.whatsapp.com/send?phone=7531683407&amp;text=Hola!&nbsp;me&nbsp;pueden&nbsp;apoyar?"><i
-                    class="fab fa-whatsapp" aria-hidden="true"></i></a>
-            <a target="_blank" href="https://www.instagram.com/friopolarhl/"><i class="fab fa-instagram"
-                    aria-hidden="true"></i></a>
+            <a 
+            target="_blank" 
+            href="https://www.facebook.com/AlbercasLC/">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a 
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=7531683407&amp;text=Hola!&nbsp;me&nbsp;pueden&nbsp;apoyar?">
+                <i
+                class="fa fa-whatsapp" 
+                aria-hidden="true">
+                </i>
+            </a>
+            <a 
+            target="_blank" 
+            href="https://www.instagram.com/friopolarhl/">
+                <i 
+                class="fa fa-instagram" 
+                aria-hidden="true"></i>
+            </a>
         </nav>
-        <h2 class="fw-300 centrar-texto">Llena el formulario de Contacto</h2>
-
-        <form method="POST" class="contact-form" action="">
-            <fieldset>
-                <legend>Información Personal</legend>
-                <label for="name">Nombre:</label>
-                <input type="text" class="name" placeholder="Tu Nombre">
-
-                <label for="email">E-mail: </label>
-                <input type="email" class="email" placeholder="Tu Correo electrónico" required>
-
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" class="telefono" placeholder="Tu Teléfono" required>
-
-                <label for="message">Mensaje: </label>
-                <textarea class="message"></textarea>
-            </fieldset>
-
-            <input type="submit" class="boton boton-verde">
-
-        </form>
+    </h1>
+    <main>
+        <div class="container">
+            <div class="row">
+                <h1 class="text-uppercase text-center titulo-principal">FORMULARIO DE COTIZACIÓN:</h1>
+                <form id="frmConsulta">
+                    <div class="row">
+                        <div class="col-12 col-md-6 form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" class="form-control">
+                            <span class="campoObligatorio">Campo obligatorio</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 form-group">
+                                <label for="nombre">Email:</label>
+                                <input type="text" name="nombre" class="form-control">
+                                <span class="campoObligatorio">Campo obligatorio</span>
+                            </div>
+                            <div class="col-12 col-md-6 form-group">
+                                <label for="nombre">Teléfono:</label>
+                                <input type="text" name="telefono" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="descripcionProyecto">Mi proyecto es de:</label>
+                            <textarea 
+                            name="mensaje" 
+                            rows="20" 
+                            placeholder="Describa aquí su proyecto"
+                            class="form-control"></textarea>
+                            <span class="campoObligatorio">Campo obligatorio</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 form-group">
+                                <label for="nombre">Lugar a realizar:</label>
+                                <input type="text" name="lugarRealizar" class="form-control">
+                                <span class="campoObligatorio">Campo obligatorio</span>
+                            </div>
+                            <div class="col-12 col-md-6 form-group">
+                                <label for="descripcionProyecto">Medidas:</label>
+                                <textarea 
+                                name="medidas" 
+                                rows="5" 
+                                class="form-control h-auto"
+                                placeholder="Si las conoce"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="descripcionProyecto">Fotos:</label>
+                            <input 
+                            type="file"
+                            name="fotos" 
+                            class="form-control"
+                            id="fotos"
+                            multiple
+                            accept="image/png, image/jpeg">
+                        </div>
+                    </div>
+                    <button 
+                    class="btn btn-success fondo-color-secundario btn-contacto mb-4"
+                    type="button"
+                    disabled>
+                        ENVIAR
+                    </button>
+                </form>
+            </div>
+        </div>
     </main>
-
-    <!-- <footer class="site-footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Galeria</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-            <p class="copyright">Todos los Derechos Reservados 2021 &copy; </p>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-12">
+					<h2 class="tituloEquipoTrabajo text-white b-b-3px-white my-4 text-center text-uppercase">
+                        Únete a nuestro equipo de trabajo
+                    </h2>
+                    <div class="row">
+                        <ul class="mb-0">
+                            <li class="list-group-item active tituloVacantes" aria-current="true">
+                                <i class="fa fa-check"></i>
+                                Vacantes disponibles
+                            </li>
+                        </ul>
+                        <div class="col-12 col-md-6 col-lg-3 p-0">
+                            <ul class="p-5px">
+                                <li class="list-group-item active-vacante">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Ingeniero civil
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Arquitecto
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Project manager
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Ingeniero residente
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 p-0">
+                            <ul class="p-5px">
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Ingeniero topógrafo
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Ingeniero industrial
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Ingeniero metalmecánico
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Ingeniero electromecánico
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 p-0">
+                            <ul class="p-5px">
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Geólogos
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Mecánico automotriz
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Analista de costos
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Abogado
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 p-0">
+                            <ul class="p-5px">
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Contador público
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Analista de costos
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Administrador
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    Ingeniero eléctrico
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 bg-white p-3 p-lg-5 mt-5">
+                        <h3 class="text-center titulo-principal w-auto mb-4">
+                            Solicito personal para el Área de Ingeniería Civil, con experiencia en la realización de las siguientes Actividades:
+                        </h3>
+                        <div class="card mx-auto bg-white">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <ul class="pl-0">
+                                                <li class="header-card">
+                                                    <i class="fa fa-check"></i>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-check-circle-o"></i>
+                                                    Diseño
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-check-circle-o"></i>
+                                                    Planeació
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-check-circle-o"></i>
+                                                    Construcción
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-check-circle-o"></i>
+                                                    Manejo de Licitaciones y/o Concursos
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <ul class="pl-0">
+                                                <li class="header-card">
+                                                    <i class="fa fa-check"></i>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-check-circle-o"></i>
+                                                    Mantenimiento de Infraestructuras
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-check-circle-o"></i>
+                                                    Supervisión de Obra
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-check-circle-o"></i>
+                                                    Elaboración de planos
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-check-circle-o"></i>
+                                                    Generadores y Precios Unitarios
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <ul class="pl-0">
+                                                <li class="header-card">
+                                                    <i class="fa fa-check"></i>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-check-circle-o"></i>
+                                                    Estudios de Factibilidad
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-check-circle-o"></i>
+                                                    Gestión de proyectos
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-check-circle-o"></i>
+                                                    Funciones Administrativas
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-check-circle-o"></i>
+                                                    Cuantificaciones
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+					<div class="card mt-3">
+						<div class="card-header tituloCV text-white">
+							<h4 class="card-title mb-0 p-1">Enviar CV a:</h4>
+						</div>
+						<div class="card-body correosCV">
+                            <ul>
+                                <li>
+                                    <a href="tomail:info@albercasdelmar.com">info@albercasdelmar.com</a>
+                                </li>
+                                <li>
+                                    <a href="tomail:construccionlc@yahoo.com">construccionlc@yahoo.com</a>
+                                </li>
+                                <li class="fst-italic">
+                                    <i class="fa fa-thumb-tack"></i>
+                                    O traer documentación a nuestras instalaciones
+                                </li>
+                            </ul>
+						</div>
+						<div class="row mt-4 p-5">
+							<h4 class="b-bottom-amarillo">Si eres Proveedor del Área Civil, Estructural, Acabados o Mantenimientos:</h4>
+							<div class="proveedorCV">
+								<p class="fw-bold mb-0 font-size-18px">Envia CV de la empresa a:</p>
+								<li>
+									<a 
+									class="fw-bold font-size-16px d-flex align-items-center" 
+									href="mailto:info@albercasdelmar.com">
+										<i class="fa fa-envelope-o p-1"></i>
+										Albercas del Mar
+									</a>
+								</li>
+								<li>
+									<a 
+									class="fw-bold font-size-16px d-flex align-items-center" 
+									href="mailto:construccionlc@yahoo.com">
+										<i class="fa fa-envelope-o p-1"></i>
+										construccionlc
+									</a>
+								</li>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="row contenidoFooter justify-content-center justify-content-md-between">
+                <div class="footer-informacion col-12 col-lg-6 col-xl-3 row d-block mb-md-4 mb-lg-0">
+                    <h4 class="text-center text-uppercase">Sobre <span>Albercas del Mar</span></h4>
+                    <hr class="w-auto">
+                    <h4 class="b-b-3px-c-secundario mb-0 text-uppercase">Dirección:</h4>
+                    <p style="text-align: justify;">
+                        <br>
+                        Nicolas Bravo 341, Centro, <br> Cd. Lázaro Cárdenas, Mich, MX.
+                    </p>
+                    <h4 class="b-b-3px-c-secundario mb-0 text-uppercase">Horarios de atención:</h4>
+                    <p style="text-align: justify;">
+                        <div class="d-flex align-items-center p-0">
+                            <i class="fa fa-check"></i>
+                            <span class="d-block">Lu. a Vi. de 07:00 am a 08:00 pm</span>
+                        </div>
+                        <div class="d-flex align-items-center p-0">
+                            <i class="fa fa-check"></i>
+                            <span class="d-block">Sábados de 07:00 am a 02:00 pm</span>
+                        </div>
+                    </p>
+                    <h4 class="b-b-3px-c-secundario mb-0 text-uppercase">Teléfonos:</h4>
+                    <ul class="p-2 links">
+                        <li>
+                            <a href="tel:+52 (753) 537 1349">
+                                &nbsp;<i class="fa fa-phone"></i>&nbsp;&nbsp;+52 (753) 537 1349
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+52 (753) 181 1195">
+                                &nbsp;<i class="fa fa-phone"></i>&nbsp;&nbsp;+52 (753) 181 1195
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/7531683407"
+                            target="_blank">
+                                &nbsp;<i class="fa fa-whatsapp"></i>&nbsp;+52 (753) 168 3407
+                            </a>
+                        </li>
+                    </ul>               
+                </div>
+                <div class="ultimos-tweets col-12 col-lg-6 col-xl-3 row d-block mb-md-4 mb-lg-0">
+                    <h4 class="text-center text-uppercase">
+                        Últimas <span>Publicaciones</span>
+                        <hr class="w-auto">
+                    </h4>
+                    <div 
+                    class="fb-page" 
+                    data-href="https://www.facebook.com/AlbercasDelMarLC"
+                    data-tabs="timeline" 
+                    data-width=""
+                    data-height="" 
+                    data-small-header="false"
+                    data-adapt-container-width="true" 
+                    data-hide-cover="false" 
+                    data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/AlbercasDelMarLC/" class="fb-xfbml-parse-ignore">
+                            <a href="https://www.facebook.com/AlbercasDelMarLC/">Albercas del mar</a>
+                        </blockquote>
+                    </div>
+                    <h4 class="text-center text-uppercase">
+                        Redes <span>sociales:</span>
+                        <hr class="w-auto">
+                    </h4>
+                    <nav class="redes-sociales text-center mb-4">
+                        <a 
+                        target="_blanck" 
+                        href="https://www.facebook.com/Icamar.Mexico/">
+                            <i
+                            class="fa fa-facebook" 
+                            aria-hidden="true"></i>
+                        </a>
+                        <a 
+                        target="_blanck" 
+                        href="https://twitter.com/icamar-constructora">
+                            <i
+                            class="fa fa-twitter" 
+                            aria-hidden="true"></i>
+                        </a>
+                        <a 
+                        target="_blanck"
+                        href="https://api.whatsapp.com/send?phone=7531683407&amp;text=Hola!&nbsp;me&nbsp;pueden&nbsp;apoyar?">
+                            <i
+                            class="fa fa-whatsapp" 
+                            aria-hidden="true"></i>
+                        </a>
+                        <a 
+                        target="_blank" href="#">
+                            <i 
+                            class="fa fa-instagram"
+                            aria-hidden="true"></i>
+                        </a>
+                        <a 
+                        target="_blank" href="https://www.youtube.com/channel/UCl7HIZRNlJPgbO18pK6N_7A">
+                            <i 
+                            class="fa fa-youtube"
+                            aria-hidden="true"></i>
+                        </a>
+                        <hr>
+                    </nav>
+                </div>
+                <div class="menu col-12 col-lg-6 col-xl-3 row d-block">
+                    <h4 class="text-center text-uppercase">Divisiones de <span>empresas</span>:</h4>
+                    <ul class="links paginasWeb">
+                        <li>
+                            Construriomar:<br>
+                            <a target="_blank" href="https://construriomar.com">
+                                <i class="fa fa-globe"></i>
+                                www.construriomar.com
+                            </a>
+                        </li>
+                        <li>
+                            HL Construcciones:<br>
+                            <a target="_blank" href="https://hlconstrucciones.com/">
+                                <i class="fa fa-globe"></i>
+                                www.hlconstrucciones.com
+                            </a>
+                        </li>
+                        <li>
+                            Ingeniería Construmex:<br>
+                            <a target="_blank" href="https://ingenieriaconstrumex.com">
+                                <i class="fa fa-globe"></i>
+                                www.ingenieriaconstrumex.com
+                            </a>
+                        </li>
+                    </ul>
+                    <h4 class="text-center text-uppercase">
+                        Gremio de <span>empresas</span>:
+                    </h4>
+                    <ul class="links paginasWeb">
+                        <li>
+                            Mi Casa Proyectos:<br>
+                            <a target="_blank" href="https://micasaproyectos.com/">
+                                <i class="fa fa-globe"></i>
+                                www.micasaproyectos.com
+                            </a>
+                        </li>
+                        <li>
+                            Mantenimiento Mi Casa:<br>
+                            <a target="_blank" href="https://mantenimientomicasa.com/">
+                                <i class="fa fa-globe"></i>
+                                www.mantenimientomicasa.com
+                            </a>
+                        </li>
+                        <li>
+                            Icamar:<br>
+                            <a target="_blank" href="https://icamar.com/">
+                                <i class="fa fa-globe"></i>
+                                www.icamar.com
+                            </a>
+                        </li>
+                        <li>
+                            Pozos Rio Mar:<br>
+                            <a target="_blank" href="https://pozosriomar.com/">
+                                <i class="fa fa-globe"></i>
+                                www.pozosriomar.com
+                            </a>
+                        </li>
+                        <li>
+                            Geo Rio Mar:<br>
+                            <a target="_blank" href="https://georiomar.com/">
+                                <i class="fa fa-globe"></i>
+                                www.georiomar.com
+                            </a>
+                        </li>
+                        <li>
+                            Rio Mar Paisajismo:<br>
+                            <a target="_blank" href="https://riomarpaisajismo.com/">
+                                <i class="fa fa-globe"></i>
+                                www.riomarpaisajismo.com
+                            </a>
+                        </li>
+                        <li>
+                            Andamios HL:<br>
+                            <a target="_blank" href="https://andamioshl.com/">
+                                <i class="fa fa-globe"></i>
+                                www.andamioshl.com
+                            </a>
+                        </li>
+                        <li>
+                            Contenedores Del Mar:<br>
+                            <a target="_blank" href="https://contenedoresdelmar.com/">
+                                <i class="fa fa-globe"></i>
+                                www.contenedoresdelmar.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu col-12 col-lg-6 col-xl-3 row d-block">
+                    <ul class="links paginasWeb">
+                        <li>
+                            Ingeniería Eléctrica HL:<br>
+                            <a target="_blank" href="https://ingenieriaelectricahl.com/">
+                                <i class="fa fa-globe"></i>
+                                www.ingenieriaelectricahl.com
+                            </a>
+                        </li>
+                        <li>
+                            Plafón Mexy:<br>
+                            <a target="_blank" href="https://plafonmexy.com/">
+                                <i class="fa fa-globe"></i>
+                                www.plafonmexy.com
+                            </a>
+                        </li>
+                        <li>
+                            Palapas Río Mar:<br>
+                            <a target="_blank" href="https://palapasriomar.com/">
+                                <i class="fa fa-globe"></i>
+                                www.palapasriomar.com
+                            </a>
+                        </li>
+                        <li>
+                            Lumina, Energias Renovables:<br>
+                            <a target="_blank" href="https://luminasolarmex.com/">
+                                <i class="fa fa-globe"></i>
+                                www.luminasolarmex.com
+                            </a>
+                        </li>
+                        <li>
+                            Frio Polar HL:<br>
+                            <a target="_blank" href="https://friopolarhl.com/">
+                                <i class="fa fa-globe"></i>
+                                www.friopolarhl.com
+                            </a>
+                        </li>
+                        <li>
+                            Inmobiliaria Rio Mar:<br>
+                            <a target="_blank" href="https://inmobiliariariomar.com/">
+                                <i class="fa fa-globe"></i>
+                                www.inmobiliariariomar.com
+                            </a>
+                        </li>
+                        <li>
+                            Camaras Vigilancia HL:<br>
+                            <a target="_blank" href="https://camarasvigilanciahl.com/">
+                                <i class="fa fa-globe"></i>
+                                www.camarasvigilanciahl.com
+                            </a>
+                        </li>
+                        <li>
+                            Master Limpio:<br>
+                            <a target="_blank" href="https://masterlimpio.com/">
+                                <i class="fa fa-globe"></i>
+                                www.masterlimpio.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </footer> -->
-    
-    <footer class="site-footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Galeria</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-            <p class="copyright">Todos los Derechos Reservados 2021 &copy; </p>
-        </div>
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
-        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase.js"></script>
-        <script src="js/app.js"></script>
-        
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script src="js/plugins.js"></script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-        <!-- <script src="js/main.js"></script> -->
-
-        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-            crossorigin=""></script>
+        <p class="copyright fw-bold">
+            <span class="d-block">©Todos los Derechos Reservados</span>
+            <span>Albercas del Mar<span class="anio-actual">---</span></span>
+        </p>
     </footer>
+    <!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> -->
+    <script src="assets/js/jquery/dist/jquery.min.js"></script>
+    <script src="assets/bootstrap/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="assets/bootstrap/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="js/main.js"></script>
+    <script 
+    src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <div id="fb-root"></div>
+    <script
+    async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v9.0"
+    nonce="Mm3bvtTt"></script>
 </body>
-
 </html>
