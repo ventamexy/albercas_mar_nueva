@@ -384,6 +384,12 @@ h2::after {
     object-fit: cover;
 }
 
+.none-scrollY {
+    overflow-y: hidden;
+}
+
+/* Spinner carga */
+
 .load-container {
     z-index: 2000;
     position: fixed;
