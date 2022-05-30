@@ -285,12 +285,25 @@ h2::after {
     padding: 5px!important;
 }
 
-.bineta {
-    width: 15px;
-    height: 15px!important;
+.bineta, .bineta-circle {
+    min-width: 15px;
+    max-width: 15px;
+    min-height: 15px!important;
+    max-height: 15px!important;
     background: var(--color-tercero);
     display: block;
     margin-right: 5px;
+}
+
+.bineta-circle {
+    border-radius: 50%;
+}
+
+.linea-horizontal {
+    width: 100%;
+    height: 15px;
+    display: block;
+    background: var(--color-tercero);
 }
 
 .barra-separadora {

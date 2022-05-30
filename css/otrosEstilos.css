@@ -508,6 +508,10 @@ footer h4 span {
     background-image: url(../img/destacada3.jpg);
 }
 
+.img-fondo-servicios {
+    background-image: url(../img/destacada2.jpg);
+}
+
 
 .contacto-frm nav {
     font-size: 10px;
@@ -563,6 +567,14 @@ footer h4 span {
         width: 80%!important;
     }
 
+}
+
+@media (max-width:424px) {
+
+    .titulo-seccion {
+        font-size: 14px;
+    }
+    
 }
 
 @media (max-width:466px) {
