@@ -1,3 +1,7 @@
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px!important;
+}
+
 .hr-p {
     padding: 5px;
     background: var(--color-principal);
@@ -38,13 +42,12 @@ a:hover {
 }
 
 .titulo-principal {
-    width: max-content;
-    color: var(--color-principal)!important;
+    letter-spacing: 23px;
+    font-size: 100px!important;
     font-weight: bold;
-    font-family: 'Oswald', sans-serif;
+    font-family: "aquajade", 'Oswald', sans-serif;
     font-style: italic;
-    color: #000!important;
-    margin: 0px auto;
+    color: #fff!important;
 }
 
 .subtitulo {

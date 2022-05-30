@@ -190,7 +190,7 @@ nav.navbar a {
     background: var(--gradiente);
 }
 
-.contenedor-gradiente .titulo-principal {
+.contenedor-gradiente {
     color: #fff!important;
     font-weight: 700;
     font-style: italic;
@@ -401,11 +401,6 @@ nav.navbar a {
     color: #fff;
     padding: 10px;
     bottom: 0;
-}
-
-.titulo-principal {
-    min-width: min-content;
-    max-width: max-content;
 }
 
 .carousel-inner ul li {
