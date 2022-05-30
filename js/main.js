@@ -1,3 +1,11 @@
+window.addEventListener("DOMContentLoaded", function(){
+
+    window.addEventListener('load', (event) => {
+        document.querySelector(".load-container").remove();
+    });
+
+});
+
 window.onload = function() {
 
     // --- Definir propieades elementos {li}

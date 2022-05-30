@@ -383,3 +383,69 @@ h2::after {
     width: 100%;
     object-fit: cover;
 }
+
+.load-container {
+    z-index: 2000;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: var(--color-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carga-spinner {
+    width: 30px;
+    height: 30px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px -5px #000;
+}
+
+.carga-spinner::before {
+    content: "♫";
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.spinner-a {
+    background-color: var(--color-quinto);
+    animation: 3s girar-spinner-izquierda  ease-in-out infinite;
+}
+
+.spinner-b {
+    background-color: var(--color-tercero);
+    margin-left: -15px;
+    margin-top: 15px;
+    animation: 3s girar-spinner-derecha  linear infinite;
+}
+
+@keyframes girar-spinner-derecha {
+    
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes girar-spinner-izquierda {
+    
+    to {
+        transform: rotate(0deg);
+    }
+
+    from {
+        transform: rotate(360deg);
+    }
+
+}
