@@ -14,3 +14,8 @@
     font-family: "aquajade";
     src: url(../fonts/aquajade/AquajadeFree-Regular.otf);
 }
+
+@font-face {
+    font-family: "Reforma1918-BlancaItalica";
+    src: url(../fonts/reforma/Reforma/Reforma1918-BlancaItalica.otf);
+}

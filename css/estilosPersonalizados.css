@@ -43,11 +43,15 @@ a:hover {
 
 .titulo-principal {
     letter-spacing: 23px;
-    font-size: 100px!important;
+    font-size: 80px!important;
     font-weight: bold;
     font-family: "aquajade", 'Oswald', sans-serif;
     font-style: italic;
     color: #fff!important;
+}
+
+.letter-spacing-5px { 
+    letter-spacing: 5px!important;
 }
 
 .subtitulo {
@@ -246,6 +250,10 @@ h2::after {
     font-size: 15px!important;
 }
 
+.font-size-120px, .font-size-120px * {
+    font-size: 120px!important;
+}
+
 .w-fit-content {
     width: fit-content;
 }
@@ -334,4 +342,44 @@ h2::after {
 .fondo-seccion {
     background-color: rgb(0,204,205,0.1);
     padding: 20px;
+}
+
+
+/* Line heigt */
+
+.line-height-normal {
+    line-height: normal!important;
+}
+
+.line-height-normal-60p {
+    line-height: 60%!important;
+}
+
+/* Tarjetas presentación */
+.tarjeta-presentacion-servicio {
+    height: 350px;
+    border: 1px solid var(--color-principal);
+    margin: 17px 0px;
+    overflow: hidden;
+}
+
+.tarjeta-presentacion-servicio .header-tarjeta {
+    font-family: "Reforma1918-BlancaItalica";
+    text-align: center;
+    padding: 10px;
+    background-color: var(--color-principal);
+    color: #fff;
+}
+
+.tarjeta-presentacion-servicio .contenido-tarjeta {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #464646;
+}
+
+.tarjeta-presentacion-servicio .contenido-tarjeta img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
