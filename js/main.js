@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", function(){
 
     window.addEventListener('load', (event) => {
-        document.querySelector(".load-container").remove();
+        // document.querySelector(".load-container").remove();
     });
 
 });
