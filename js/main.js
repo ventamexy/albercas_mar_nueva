@@ -3,7 +3,8 @@ window.addEventListener("DOMContentLoaded", function(){
     document.querySelector("body").classList.add("none-scrollY");
 
     window.addEventListener('load', (event) => {
-        // document.querySelector(".load-container").remove();
+        document.querySelector(".load-container").remove();
+        document.querySelector("body").classList.remove("none-scrollY");
     });
 
 });
