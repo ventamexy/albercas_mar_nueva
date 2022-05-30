@@ -551,10 +551,6 @@ footer h4 span {
         padding: 14px!important;
     }
 
-    .titulo-principal {
-        font-size: 40px!important;
-    }
-
 }
 
 @media (max-width:350px) {
@@ -565,6 +561,22 @@ footer h4 span {
 
     .fb-page iframe {
         width: 80%!important;
+    }
+
+}
+
+@media (max-width:466px) {
+
+    .line-height-normal-60p {
+        line-height: 26%!important;
+    }
+
+    .titulo-principal {
+        font-size: 40px!important;
+    }
+
+    .titulo-header p {
+        font-size: 55px!important;
     }
 
 }
