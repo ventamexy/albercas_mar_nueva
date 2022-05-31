@@ -512,9 +512,46 @@ footer h4 span {
     background-image: url(../img/destacada2.jpg);
 }
 
-
 .contacto-frm nav {
     font-size: 10px;
+}
+
+#carousel-services {
+    width: 650px;
+    height: 150px;
+}
+
+#carousel-services .carousel-inner {
+    min-height: 150px;
+    max-height: 150px;
+    margin-bottom: 50px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#carousel-services .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#carousel-services .carousel-item p {
+    width: 70%;
+    position: absolute;
+    color: #fff;
+    font-size: 28px;
+    line-height: 30px;
+    border-bottom: 3px solid #fff;
+}
+
+#carousel-services .carousel-control-prev-icon, #carousel-services .carousel-control-next-icon {
+    border-radius: 50%;
+    width: 10px!important;
+    height: 10px!important;
+    padding: 14px!important;
 }
 
 /* 
