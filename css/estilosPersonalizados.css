@@ -244,7 +244,7 @@ h2::after {
     box-shadow: 0px 8px 18px 1px var(--rgb-color-principal)!important;
 }
 
-.box-shadow-carousel {
+.box-shadow-secundario {
     box-shadow: -7px 10px 17px -3px rgb(0 0 0 / 50%);
 }
 
@@ -453,6 +453,15 @@ h2::after {
     animation: 3s girar-spinner-derecha  linear infinite;
 }
 
+.contenido-seccion-informacion {
+    background-color: #0088aa;
+    padding: 10px;
+    color: #ffff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
 @keyframes girar-spinner-derecha {
     
     from {
@@ -477,9 +486,9 @@ h2::after {
 
 }
 
-/* Media querys */
-
 .carga-spinner {
     width: 50px;
     height: 50px;
 }
+
+/* Media querys */
