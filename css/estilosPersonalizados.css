@@ -1,3 +1,21 @@
+/* COLORES */
+.color-principal {
+    background-color: var(--color-principal)!important;
+}
+.color-secundario {
+    background-color: var(--color-secundario)!important;
+}
+.color-tercero {
+    background-color: var(--color-tercero)!important;
+}
+.color-cuarto {
+    background-color: var(--color-cuarto)!important;
+}
+.color-quinto {
+    background-color: var(--color-quinto)!important;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
     margin: 0px!important;
 }
@@ -405,6 +423,14 @@ h2::after {
     object-fit: cover;
 }
 
+.contenedor-otros-servicios .tarjeta-presentacion-servicio {
+    height: auto!important;
+}
+
+.contenedor-otros-servicios .contenido-tarjeta {
+    height: 50px!important;
+}
+
 .none-scrollY {
     overflow-y: hidden;
 }
@@ -460,6 +486,10 @@ h2::after {
     font-size: 18px;
     font-weight: bold;
     border-radius: 15px;
+}
+
+.family-secundario {
+    font-family: "Reforma1918-BlancaItalica";
 }
 
 @keyframes girar-spinner-derecha {
