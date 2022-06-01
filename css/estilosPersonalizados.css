@@ -255,7 +255,7 @@ h2::after {
 
 /* Text */
 .text-justify {
-    text-align: justify;
+    text-align: justify!important;
 }
 
 .box-shadow-principal {
