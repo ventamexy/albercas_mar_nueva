@@ -554,6 +554,11 @@ footer h4 span {
     padding: 14px!important;
 }
 
+
+.lista-personalizada li {
+    list-style-image: url("../img/iconos/rubber_ring.png")!important;
+}
+
 /* 
     *
     * --- Media querys

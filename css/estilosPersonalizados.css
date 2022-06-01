@@ -237,6 +237,10 @@ h2::after {
     margin-bottom: 7rem;
 }
 
+.z-index-2 {
+    z-index: 2!important;
+}
+
 .z-index-3 {
     z-index: 3!important;
 }
@@ -490,6 +494,40 @@ h2::after {
 
 .family-secundario {
     font-family: "Reforma1918-BlancaItalica";
+}
+
+.partesTitulo {
+    position: absolute!important;
+    min-width: 100%;
+    z-index: 1;
+    background: var(--color-principal)!important;;
+}
+
+.titulo-seccion-verde {
+    border-bottom: 123px solid var(--color-secundario)!important;
+}
+
+.titulo-seccion-gris {
+    border-bottom: 123px solid var(--color-principal)!important;
+}
+
+.tituloParteDerecha {
+    width: 43%;
+    height: 0;
+    border-left: 103px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 123px solid var(--color-secundario)!important;
+    transform: rotateX(180deg);
+    position: absolute;
+    right: 0;
+}
+
+.tituloParteIzquierda {
+    width: 70%;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 103px solid transparent;
+    border-bottom: 123px solid var(--color-principal)!important;
 }
 
 @keyframes girar-spinner-derecha {
