@@ -45,6 +45,14 @@ thead th {
     color: #fff!important;
 }
 
+tfoot {
+    background: #999999;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
 .table-asistimos tr {
     font-weight: bold;
     text-align: center;
