@@ -15,9 +15,39 @@
     background-color: var(--color-quinto)!important;
 }
 
-
 h1, h2, h3, h4, h5, h6 {
     margin: 0px!important;
+}
+
+tbody {
+    --bs-table-accent-bg: var(--color-tercero)!important;
+    --bs-table-striped-bg: var(--color-cuarto)!important;
+}
+
+table {
+    border-color: #000!important;
+}
+
+tbody, td, tfoot, th, thead, tr {
+    border-style: dashed!important;
+    border-width: 2px!important;
+}
+
+tbody tr {
+    font-size: 18px!important;
+}
+
+th {
+    background-color: var(--color-principal)!important;
+}
+
+thead th {
+    color: #fff!important;
+}
+
+.table-asistimos tr {
+    font-weight: bold;
+    text-align: center;
 }
 
 .hr-p {
