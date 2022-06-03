@@ -222,6 +222,10 @@ h2::after {
 }
 
 /* Margenes */
+.ml-0im {
+    margin-left: 0!important;
+}
+
 .mt-6 {
     margin-top: 4rem;
 }
@@ -644,13 +648,17 @@ h2::after {
     background-color: var(--color-secundario);
 }
 
-
 .section li a {
     color: var(--color-quinto)!important;
 }
 
 .section ul {
     line-height: 20px;
+}
+
+.redireccion-web {
+    border-left: 3px solid #ffc527;
+    padding-left: 5px;
 }
 
 /* Media querys */
