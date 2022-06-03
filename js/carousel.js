@@ -1,5 +1,13 @@
+// --- Carousel servicios
 let myCarousel = document.querySelector('#carousel-services');
-let carousel = new bootstrap.Carousel(myCarousel, {
+new bootstrap.Carousel(myCarousel, {
+  interval: 7000,
+  wrap: true
+});
+
+// --- Carousel slider principal
+let carouselServicios = document.querySelector('#carouselServicios');
+new bootstrap.Carousel(carouselServicios, {
   interval: 7000,
   wrap: true
 });
