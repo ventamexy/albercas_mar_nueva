@@ -352,7 +352,12 @@ nav.navbar a {
     background-color: unset!important;
 }
 
-.btnSliderCambioImagen.active {
+.btnSliderCambioImagen {
+    background-color: var(--color-cuarto)!important;
+    margin-bottom: 20px;
+}
+
+.btnSliderCambioImagen.active, .btnSliderCambioImagen {
     width: 30px!important;
     height: 30px!important;
     border-radius: 50%;
@@ -558,6 +563,10 @@ footer h4 span {
     list-style-image: url("../img/iconos/rubber_ring.png")!important;
 }
 
+.fondo-text-slider {
+    background-color: rgb(0,0,0,0.7);
+    border-radius: 50px;
+}
 
 /* 
     *
