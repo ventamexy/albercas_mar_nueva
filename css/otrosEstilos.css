@@ -714,6 +714,14 @@ footer h4 span {
 
 }
 
+@media (max-width:857px) {
+
+    .menu-paginas-web {
+        display: block!important;
+    }
+
+}
+
 @media (max-width:991.98px) {
 
     #navegacion-principal {
