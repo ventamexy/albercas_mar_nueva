@@ -39,6 +39,8 @@
     width: auto!important;
     display: flex!important;
     justify-content: center;
+    min-width: 90%!important;    
+    max-width: 90%!important;
 }
 
 .fb-page iframe {

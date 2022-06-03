@@ -661,4 +661,12 @@ h2::after {
     padding-left: 5px;
 }
 
+.fb-page {
+    min-height: 500px;
+    max-height: 500px;
+    display: flex!important;
+    justify-content: center;
+    padding: 10px;
+}
+
 /* Media querys */
