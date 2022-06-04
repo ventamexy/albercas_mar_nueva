@@ -510,15 +510,17 @@ footer h4 span {
 }
 
 .imagen-fondo {
-    background-image: url(../img/alberca_tres.jpg);
+    background-image: url(../img/albercas_del_mar_imagen4.jpg);
+    background-position-y: center;
 }
 
 .imagen-fondo-b {
-    background-image: url(../img/destacada3.jpg);
+    background-image: url(../img/albercas_del_mar_imagen5.jpg);
 }
 
 .img-fondo-servicios {
     background-image: url(../img/destacada2.jpg);
+    background-position-y: bottom;
 }
 
 .contacto-frm nav {
