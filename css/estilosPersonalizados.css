@@ -456,7 +456,7 @@ h2::after {
     overflow: hidden;
 }
 
-.tarjeta-presentacion-servicio .header-tarjeta {
+.header-tarjeta {
     font-family: "Reforma1918-BlancaItalica";
     text-align: center;
     padding: 10px;
