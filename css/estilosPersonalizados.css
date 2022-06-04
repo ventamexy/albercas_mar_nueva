@@ -580,6 +580,17 @@ h2::after {
     border-bottom: 123px solid var(--color-principal)!important;
 }
 
+.contenedor-informacion-imagen {
+    border-radius: 0;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-width: 100%;
+    background-color: rgb(0,0,0,0.7);
+}
+
 @keyframes girar-spinner-derecha {
     
     from {
