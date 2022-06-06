@@ -46,8 +46,15 @@ h1 {
     width: 100%;
 }
 
+.pswp__zoom-wrap {
+    width: 350px;
+    height: 300px;
+}
+
 img.pswp__img {
-    height: auto !important;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 img {
