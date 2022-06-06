@@ -15,6 +15,10 @@
     background-color: var(--color-quinto)!important;
 }
 
+header {
+    width: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin: 0px!important;
 }
@@ -182,6 +186,7 @@ h2::after {
 .menu-fijado {
     position: fixed!important;
     top: 0!important;
+    z-index: 100;
 }
 
 .texto-blanco {

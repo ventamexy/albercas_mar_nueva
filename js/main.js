@@ -71,38 +71,47 @@ $(document).on("scroll", function() {
     /**
      * --- Unidades en pixeles.
      */
-    let offsetHeight = $(document)[0].scrollingElement.offsetHeight; // Altura total del elemento
     let scrollTop = $(document).scrollTop(); // Desplazamiento del scroll vertical.
+    let offsetHeight = $(document)[0].scrollingElement.offsetHeight; // Altura total del elemento
     let clientHeight = $(document)[0].scrollingElement.clientHeight;
 
-    // console.log(offsetHeight, clientHeight, (offsetHeight-clientHeight), " = ", scrollTop);
-
     if ( (offsetHeight-clientHeight) == scrollTop ) {
-
         $(".irAbajo i").addClass("transform-r-180");
         $(".irAbajo").removeClass("irAbajo").addClass("irArriba");
-
     } else {
-
         $(".irAbajo i").removeClass("transform-r-180");
         $(".irArriba").removeClass("irArriba").addClass("irAbajo");
-
     }
 
     /**
      * 
-     * Fijar menú
+     * Fijar menú principal
      * 
      */
 
-    if ( document.querySelector(".menu-fijado") != null ) {
+    let header = $("header");
+    let nav = $("nav");
+    let textoLogo = $(".texto-logo");
+    let contenedorLogoTexto = $(".contenedor-logo-texto");
+    let contenedorLogoTextoLogo = $(".contenedor-logo-texto .logo");
 
-        if ( scrollTop >= 200 ) {
-            $(".navbar")[0].classList.add("menu-fijado");
-        } else {
-            $(".navbar")[0].classList.remove("menu-fijado");
-        }
+    if ( scrollTop > 300 ) {
 
+        header[0].classList.add("altura-reducida-menu", "menu-fijado");
+        nav[0].classList.add("altura-reducida-menu");
+        textoLogo[0].classList.add("d-none");
+        contenedorLogoTexto[0].classList.add("d-flex", "justify-content-center", "align-content-center", "align-items-center");
+        contenedorLogoTextoLogo[0].classList.add("tamanio-reducido-logo");
+
+    } else {
+
+        header.removeAttr("style");
+        header[0].classList.remove("altura-reducida-menu", "menu-fijado");
+        nav[0].classList.remove("altura-reducida-menu");
+        textoLogo[0].classList.remove("d-none");
+        contenedorLogoTexto[0].classList.remove("d-flex", "justify-content-center", "align-content-center", "align-items-center");
+        contenedorLogoTextoLogo[0].classList.remove("tamanio-reducido-logo");
+        
     }
     
 });
