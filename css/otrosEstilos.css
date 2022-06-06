@@ -102,10 +102,6 @@
     display: block!important;
 }
 
-.navbar-toggler {
-    background-color: #fff!important;
-}
-
 nav.navbar {
     width: 100%;
     height: 100%;
@@ -802,6 +798,20 @@ footer h4 span {
 
     .seccion-informacion-header {
         width: 80%;
+    }
+
+}
+
+@media (max-width:1169px) {
+
+    .texto-logo {
+        display: none;
+    }
+
+    .contenedor-logo-texto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 }

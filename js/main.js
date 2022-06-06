@@ -95,25 +95,32 @@ $(document).on("scroll", function() {
     let contenedorLogoTexto = $(".contenedor-logo-texto");
     let contenedorLogoTextoLogo = $(".contenedor-logo-texto .logo");
 
-    if ( scrollTop > 300 ) {
+    if ( $(window).width() >= 1170 ) {
 
-        header[0].classList.add("altura-reducida-menu", "menu-fijado");
-        nav[0].classList.add("altura-reducida-menu");
-        textoLogo[0].classList.add("d-none");
-        contenedorLogoTexto[0].classList.add("d-flex", "justify-content-center", "align-content-center", "align-items-center");
-        contenedorLogoTextoLogo[0].classList.add("tamanio-reducido-logo");
+        if ( scrollTop > 300 ) {
+            header[0].classList.add("altura-reducida-menu", "menu-fijado");
+            nav[0].classList.add("altura-reducida-menu");
+            textoLogo[0].classList.add("d-none");
+            contenedorLogoTexto[0].classList.add("d-flex", "justify-content-center", "align-content-center", "align-items-center");
+            contenedorLogoTextoLogo[0].classList.add("tamanio-reducido-logo");
+        } else {
+            header[0].classList.remove("altura-reducida-menu", "menu-fijado");
+            nav[0].classList.remove("altura-reducida-menu");
+            textoLogo[0].classList.remove("d-none");
+            contenedorLogoTexto[0].classList.remove("d-flex", "justify-content-center", "align-content-center", "align-items-center");
+            contenedorLogoTextoLogo[0].classList.remove("tamanio-reducido-logo");
+        }
 
     } else {
 
-        header.removeAttr("style");
-        header[0].classList.remove("altura-reducida-menu", "menu-fijado");
-        nav[0].classList.remove("altura-reducida-menu");
-        textoLogo[0].classList.remove("d-none");
-        contenedorLogoTexto[0].classList.remove("d-flex", "justify-content-center", "align-content-center", "align-items-center");
-        contenedorLogoTextoLogo[0].classList.remove("tamanio-reducido-logo");
+        if ( scrollTop > 300 ) {
+            header[0].classList.add("menu-fijado");
+        } else {
+            header[0].classList.remove("menu-fijado");
+        }
         
     }
-    
+        
 });
 
 // --- Se establece el anio actual en el campo correspondiente.
