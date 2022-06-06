@@ -54,3 +54,14 @@ img {
     min-width: initial!important;
     max-width: initial!important;
 }
+
+.pswp__dynamic-caption {
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+}
+
+.pswp__dynamic-caption {
+    top: 0!important;
+    margin-top: 0px!important;
+}
