@@ -8,6 +8,6 @@ new bootstrap.Carousel(myCarousel, {
 // --- Carousel slider principal
 let carouselServicios = document.querySelector('#carouselServicios');
 new bootstrap.Carousel(carouselServicios, {
-  interval: 7000,
+  interval: 10000,
   wrap: true
 });
