@@ -750,6 +750,14 @@ footer h4 span {
     
 }
 
+@media (max-width:767px) {
+
+    .pswp-gallery {
+        justify-content: center!important;
+    }
+
+}
+
 @media (max-width:769px) {
     
     .servicio-construccion p {
