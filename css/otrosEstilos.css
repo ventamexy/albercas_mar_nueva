@@ -98,6 +98,10 @@
     border-bottom: 3px solid #fff;
 }
 
+.b-b-7px-white {
+    border-bottom: 7px solid #fff;
+}
+
 .menu-activo {
     display: block!important;
 }
