@@ -413,15 +413,6 @@ nav.navbar a {
     bottom: 0;
 }
 
-.carousel-inner ul li {
-    font-size: 25px;
-}
-
-.carousel-caption > div {
-    min-width: 90%;
-    max-width: 90%;
-}
-
 .header-card {
     padding: 5px;
     background: var(--color-secundario);
@@ -458,10 +449,6 @@ nav.navbar a {
 
 .servicio-construccion p {
     margin-bottom: 0px;
-}
-
-.carousel-caption * {
-    color: #fff!important;
 }
 
 .subInformacion {
@@ -533,44 +520,6 @@ footer h4 span {
     font-size: 10px;
 }
 
-#carousel-services {
-    width: 650px;
-    height: 150px;
-}
-
-#carousel-services .carousel-inner {
-    min-height: 150px;
-    max-height: 150px;
-    margin-bottom: 50px;
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-#carousel-services .carousel-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-#carousel-services .carousel-item p {
-    width: 70%;
-    position: absolute;
-    color: #fff;
-    font-size: 28px;
-    line-height: 30px;
-    border-bottom: 3px solid #fff;
-}
-
-#carousel-services .carousel-control-prev-icon, #carousel-services .carousel-control-next-icon {
-    border-radius: 50%;
-    width: 10px!important;
-    height: 10px!important;
-    padding: 14px!important;
-}
-
 .lista-personalizada li {
     list-style-image: url("../img/iconos/rubber_ring.png")!important;
 }
@@ -632,21 +581,6 @@ footer h4 span {
         width: 100%!important;
     }
 
-    .carousel-control-prev-icon, .carousel-control-next-icon {
-        width: 1px;
-        height: 1px;
-        padding: 14px!important;
-    }
-
-}
-
-@media (max-width:348px) {
-
-    .carousel-caption .titulo-principal {
-        /* font-family: 'Times New Roman', Times, serif!important; */
-        font-size: 12px;
-    }
-
 }
 
 @media (max-width:350px) {
@@ -667,7 +601,7 @@ footer h4 span {
         padding: 0px!important;
     }
 
-    .subInformacion div, .carousel-caption h1 {
+    .subInformacion div {
         font-size: 15px;
     }
 
@@ -727,29 +661,6 @@ footer h4 span {
 
 }
 
-@media (max-width:600px) {
-
-    .carousel-caption > div > div {
-        line-height: 170%;
-    }  
-
-    .carousel-caption .titulo-principal {
-        /* font-family: 'Times New Roman', Times, serif!important; */
-        font-size: 40px;
-    }
-      
-}
-
-@media (max-width:731px) {
-
-    .carousel-caption {
-        position: relative;
-        left: 0!important;
-        right: 0!important;
-    }
-    
-}
-
 @media (max-width:767px) {
 
     .pswp-gallery {
@@ -769,14 +680,6 @@ footer h4 span {
         display: none;
     }
     
-}
-
-@media (max-width:827px) {
-
-    .subInformacion div, .carousel-caption h1 {
-        font-size: 30px;
-    }
-
 }
 
 /* Menú */
@@ -804,12 +707,6 @@ footer h4 span {
 
     .contacto-header {
         border-bottom: 3px solid var(--color-secundario);
-    }
-
-    .carousel-caption {
-        position: relative!important;
-        right: 0px!important;
-        left: 0px!important;
     }
 
     .tituloPrincipal {

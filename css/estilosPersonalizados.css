@@ -164,7 +164,8 @@ h2::after {
     height: 0px!important;
 }
 
-.carousel-inner {
+.carou
+sel-inner {
     background-color: var(--color-principal);
     min-height: 1000px;
 }
