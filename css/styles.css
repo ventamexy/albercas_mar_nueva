@@ -598,7 +598,6 @@ input:not([type="submit"]), textarea, select {
     display: block;
     width: 100%;
     background-color: #e1e1e1;
-    margin-bottom: 2rem;
     border: none;
     border-radius: 1rem;
 }
