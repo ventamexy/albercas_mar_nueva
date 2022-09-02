@@ -37,7 +37,7 @@ input, textarea {
 }
 
 .campoValidacion {
-    background-color:#ff9191;
+    background-color:#ff9191!important;
 }
 
 /* Bootbox */
