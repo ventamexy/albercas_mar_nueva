@@ -26,7 +26,9 @@
     <link rel="stylesheet" href="css/otrosEstilos.css">
     <link rel="stylesheet" href="css/estilosFormularioContacto.css"/>
     <link rel="stylesheet" href="css/spinnerCarga.css"/>
+    <link rel="stylesheet" href="/css/estilosReCaptcha.css"></link>
     <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body class="none-scrollY">
     <div class="load-container visble">
@@ -220,6 +222,15 @@
                                 <span class="campoObligatorio">Campo obligatorio</span>
                             </div>
                         </div>
+                        <div class="row d-flex align-items-center position-relative">
+                            <div class="g-recaptcha" data-sitekey="6LdH2wgiAAAAALjFWNqqRG4ulDP2tsc_4dI1bnp3"></div>
+                                <div class="col-1 position-absolute contenedor-boton">
+                                    <button class="reload-captcha" type="button">
+                                        <i class="fa fa-refresh"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        <br/>
                         <div class="row justify-content-center">
                             <button 
                             class="btn btn-success btnEnviarPrecalificacion" 
